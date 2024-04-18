@@ -79,7 +79,7 @@ nav{
 }
 
 .mid-section{
-  padding: 60px 120px 60px 120px;
+  padding: 60px 150px 60px 150px;
   font-family: Bellota Text;
   display: flex;
   justify-content: space-between;
@@ -1351,7 +1351,7 @@ footer{
   #nav-links{
     padding-left: 150px ;
   }
-  .mid-section-part-1 h1 {
+  /* .mid-section-part-1 h1 {
     font-size: 46px;
     line-height: 46px;
 }
@@ -1364,7 +1364,7 @@ footer{
 }
 .divider-pic-2 {
   margin: 20px 250px 20px -175px;
-}
+} */
 
 
   }

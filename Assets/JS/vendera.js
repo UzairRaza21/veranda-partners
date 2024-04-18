@@ -73,13 +73,4 @@ $('.owl-carousel').owlCarousel({
   }
 })
 
-// Animation 
 
-function scrolldown(){
-  if(window.scrollY >= 100 ){
-   navbar.classList.add("animate__animated animate__fadeInLeft")
-  }
-  else{
-   navbar.classList.remove("sticky")
-  }
-}
