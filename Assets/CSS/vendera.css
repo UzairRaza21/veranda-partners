@@ -1348,23 +1348,8 @@ footer{
 /* Media Quries */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (max-width: 1440px ) {
-  #nav-links{
-    padding-left: 150px ;
-  }
-  /* .mid-section-part-1 h1 {
-    font-size: 46px;
-    line-height: 46px;
-}
-.mid-section-part-1 {
-  width: 500px;
-  padding: 10% 0px 0px 0px;
-}
-.mid-section{
-  padding: 60px 120px 50px 120px;
-}
-.divider-pic-2 {
-  margin: 20px 250px 20px -175px;
-} */
+
+
 
 
   }
