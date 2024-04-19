@@ -1874,7 +1874,7 @@ footer{
     width: 85%;
     height: 90%;
 }
-  }
+  
   .mid-section-part-1 {
     max-width: 50%;
     margin: 3% 0% 3% 0%;
@@ -2208,7 +2208,8 @@ footer{
 .invest-spotlight-lower-text {
   padding: 50px 10% 50px 10%;
 }
-    
+
+} 
   
   /* Extra small devices (phones, 600px and down) */
   @media only screen and (max-width: 600px) {
@@ -2753,6 +2754,9 @@ footer{
   @media only screen and (max-width: 425px) {
   
   }
+
+
+
   @media only screen and (max-width: 375px) {
     .hero-inner-text h1 {
       font-size: 55px;
@@ -2916,6 +2920,11 @@ footer{
   height: 640px;
 }
   }
+
+
+
+
+
   @media only screen and (max-width: 320px) {
     .hero-inner-text h1 {
       font-size: 52px;
