@@ -20,9 +20,7 @@ nav{
   color: rgba(255, 255, 255, 1);
   display: flex;
   align-items: center;
-  font-size: 13px;
   padding: 1.5% 0px 1.5% 6% ;
-
 
 }
 
@@ -1521,8 +1519,37 @@ footer{
 
 /* Media Quries */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (max-width: 1440px ) {
+@media only screen and (max-width: 1200px ) {
+/* Nav Start */
+nav{
+  background: linear-gradient(180deg, #225E8D 0%, #28689A 100%);
+  font-family: "Asap", sans-serif;
+  color: rgba(255, 255, 255, 1);
+  display: flex;
+  align-items: center;
+  padding: 1.5% 0px 1.5% 6% ;
 
+
+}
+
+
+#nav-links{
+  margin-left: 20%  ;
+
+}
+.nav-links li {
+  margin: 0px 3% 0px 3% ;
+}
+.nav-links li a{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  display: inline-block;
+}
+.nav-link-big-width {
+  width: 120px;
+}
 
 
 
