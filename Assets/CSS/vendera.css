@@ -345,10 +345,10 @@ nav{
   display: flex;
   gap: 4%;
   justify-content: center;
-  padding: 0% 2% 0% 2%;
+  padding: 0% 8% 0% 8%;
 }
 .team-cart-pic img{
-  width: 90%;
+  width: 85%;
 }
 .team-cart h4{
   font-size: 26px;
@@ -359,29 +359,26 @@ nav{
   font-size: 20px;
   color: var(--para-font-color);
 }
-
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
 
 .faq-section{
   font-family: Bellota Text;
-  margin: 180px 100px 180px 100px;
+  margin: 180px 5% 180px 5%;
 }
 
 .faq-section h1{
-  font-family: Bellota Text;
-  font-size: 80px;
+  font-size: var(--heading-2);
   font-weight: 400;
   line-height: 100px;
   color: var(--main-font-color);
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 60px;
- 
 }
 .faq-section-lower{
   background-color: rgba(240, 240, 240, 1);
   border-radius: 10px ;
-  height: 240px;
-  width: 98%;
+  height: 250px;
+  width: 90%;
   margin: 20px auto;
 }
 .faq-inner{
@@ -399,10 +396,10 @@ nav{
   font-size: 20px;
   font-weight: 800;
   color: var(--para-font-color);
-  width: 900px;
+  width: 80%;
 }
 
-
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
 
 
 
@@ -413,7 +410,7 @@ nav{
 
 
 .insight-section h1{
-  font-size: 80px;
+  font-size: var(--heading-2);
   font-weight: 400;
   line-height: 85px;
   color: var(--main-font-color);
@@ -422,6 +419,8 @@ nav{
   padding-top: 30px
 }
 
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
 
 
 
@@ -1541,6 +1540,16 @@ footer{
 .section-3-para-bold{
   font-size: 18px;
 }
+
+.faq-section{
+  margin: 180px 1.5% 180px 1.5%;
+}
+
+.faq-section-lower{
+  width: 100%;
+}
+
+
 
 
 
