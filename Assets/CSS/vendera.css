@@ -1517,7 +1517,7 @@ footer{
 
 /* Media Quries */
 /* Extra large devices (large laptops and desktops, upto 1366px ) */
-@media only screen and (max-width: 1366px ) {
+@media only screen and (max-width: 1367px ) {
 /* Nav Start */
 .nav-links li {
   margin: 0px 2% 0px 2% ;
