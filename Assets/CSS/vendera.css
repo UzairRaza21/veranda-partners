@@ -2205,7 +2205,7 @@ footer{
   color: rgba(35, 97, 146, 1);
   font-size: 40px;
   font-weight: 300;
-  line-height: 60px;
+  line-height: 40px;
 }
 .section-3-left-inner p{
   width: 90%;
@@ -2241,55 +2241,55 @@ footer{
 
 
 .faq-section{
-  margin: 120px 40px 120px 40px;
+  margin: 20% 3% 120px 3%;
 }
 
 .faq-section h1{
-  font-size: 60px;
+  font-size: var(--heading-2-768px);
   font-weight: 400;
   line-height: 60px;
-  margin-bottom: 60px;
+  margin-bottom: 10px;
  
 }
 .faq-section-lower{
-  height: 200px;
-  width: 98%;
+  height: auto;
+  width: 100%;
 }
 .faq-inner{
-  padding: 50px 0px 0px 50px ;
+  padding: 5% 0px 5% 5% ;
 }
 .faq-inner h4{
-  font-size: 20px;
+  font-size: 28px;
   font-weight: 900;
 
 }
 .faq-inner p{
-  margin-top: 10px;
-  font-size: 18px;
+  margin-top: 20px;
+  font-size: 20px;
   font-weight: 800;
-  width: 600px;
+  width: 95%;
 }
+
+/* ------------------------------------------------------------------------------------------------------------------------- */
 .section-team{
   margin: 120px 0px 120px 0px;
 }
-
 .section-team-text{
-  padding: 20px 50px 120px 50px;
+  margin: 12% 3% 0% 3%;
+  padding: 20px 0px 10% 0px;
 }
+
 .section-team-text h1{
   font-size: 60px;
   font-weight: 400;
   line-height: 60px;
 }
 .section-team-text p{
-  margin-top: 50px;
-  font-size: 18px;
-  color: rgba(112, 120, 118, 0.802);
-  font-weight: 700;
+  width: 100%;
 }
 .section-team-carts{
   display: flex;
-  gap: 50px;
+  gap: 70px;
   justify-content: space-evenly;
   flex-wrap: wrap;
   align-items: center;
@@ -2311,7 +2311,7 @@ footer{
   font-weight: 500;
 
 }
-
+/* --------------------------------------------------------------------------------------------------------------------------- */
 #footer-nav-links{
   flex-direction: column;
   text-align: center;
