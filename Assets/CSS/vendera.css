@@ -3309,6 +3309,32 @@ margin: 20px 8px 8px 8px;
 
 
 
+.team-cart-pic img{
+  width: 60%;
+  margin-top: 20px;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------- */
+
+.faq-inner{
+  padding: 10% 0 10% 6% ;
+  
+}
+.faq-inner h4{
+  font-size: 20px;
+  font-weight: 600;
+  width: 90%;
+}
+.faq-inner p {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  width: 90%;
+  line-height: 24px;
+}
+
+
+
 /* -----------------------------------------------------------Contact Page-------------------------------------------------- */
 
 
