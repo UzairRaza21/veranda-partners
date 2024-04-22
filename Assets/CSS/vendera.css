@@ -14,6 +14,22 @@
   --heading-2-600px: 40px;
 }
 
+.veranda-main-heading{
+  text-align: center;
+  font-size: var(--heading-2);
+  color: var(--main-font-color);
+  font-family: Bellota Text;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.veranda-sub-heading{
+  text-align: center;
+  font-size: var(--para-font-size);
+  color: var(--para-font-color);
+  font-family: Bellota Text;
+  font-weight: 400;
+}
+
 
 
 /* Nav Start */
@@ -73,7 +89,7 @@ nav{
   background-image: url('../Images/Home/hero-section-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 150vh;
   
 }
 .hero-inner-text{
@@ -873,6 +889,23 @@ justify-content: center;
   font-family: Bellota Text;
   text-align: center;
 }
+.section-different-text{
+  margin: 5% auto;
+}
+.section-different-text h1 {
+  color: var(--main-font-color);
+  font-weight: 400;
+  line-height: 80px;
+  font-size: var(--heading-2);
+}
+
+.section-different-text p {
+  margin: 3% auto;
+  color: var(--para-font-color);
+  font-weight: 400;
+  line-height: 28px;
+  font-size: var(--para-font-size);
+}
 .different-section-lower{
   background: linear-gradient(180deg, #F1F1F1 0%, #E1E7EC 100%);
   width: 100%;
@@ -897,6 +930,21 @@ justify-content: center;
   color: rgba(0, 0, 0, 0.756);
   font-size: 24px;
   letter-spacing: 1px;
+}
+/* -------------------------------------------------------------------------------------------------------------------------- */
+.investment-section{
+  font-family: Bellota Text ;
+}
+
+.section-investment-text h1{
+  color: var(--main-font-color);
+  font-weight: 400;
+  line-height: 80px;
+  font-size: var(--heading-2);
+  text-align: center;
+  margin: 8% auto 6% auto;
+  text-transform: uppercase;
+
 }
 
 .invest-certeria-inner{
@@ -925,10 +973,18 @@ justify-content: center;
   width: 90%;
 }
 
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+
+.invest-spotlight-section{
+  font-family: Bellota Text;
+}
+.invest-text{
+  margin: 6% auto 3% auto;
+}
 
 .invest-spotlight-lower-text{
   text-align: left;
-  padding: 50px 25% 50px 25%;
+  padding: 50px 30% 50px 30%;
 }
 .spotlight-lower-text-inner{
   margin: 40px 0px 0px 0px;
@@ -937,27 +993,23 @@ justify-content: center;
 
 .spotlight-lower-text-inner h2{
   color: rgba(35, 97, 146, 1);
-  font-size: 34px;
+  font-size: 36px;
   font-weight: 400;
   width: 100%;
 }
 .spotlight-lower-text-inner li {
   color: rgba(35, 97, 146, 1);
-  font-size: 34px;
+  font-size: 36px;
   font-weight: 400;
   margin-top: 8%;
 }
 
 .spotlight-lower-text-inner p{
   color: rgba(112, 120, 118, 1);
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   margin-top: 5%;
 }
-
-
-
-
 
 .invest-spotlight-inner{
   display: flex;
@@ -973,10 +1025,11 @@ justify-content: center;
   z-index: 9999;
   left: 12%;
   top: 10%;
+  height: 40vh;
 }
 .invest-spotlight-text-border p{
-  padding: 8% 18% 8% 6%;
-  font-size: 20px;
+  padding: 6% 18% 6% 8%;
+  font-size: 27px;
   text-align: left;
   color:  rgba(112, 120, 118, 1);
   font-weight: 700;
@@ -995,12 +1048,27 @@ justify-content: center;
   background: rgba(240, 240, 240, 1);
   display: flex;
   width: 60%;
+  height: 30vh;
   border-radius: 100px 100px 100px 0px;
   padding: 20px 0px 15px 40px;
-  margin: 10px auto;
+  margin: 20px auto 50px auto;
 }
 .invest-spotlight-last-text{
   margin: auto;
+}
+.invest-spotlight-last-box{
+  display: flex;
+  justify-content: end;
+}
+.invest-spotlight-last-box h1{
+  width: 50%;
+  height: 0px;
+  margin-top: 3%;
+  margin-right: 6px;
+  border-top: 3px solid rgba(35, 97, 146, 1);
+}
+.invest-spotlight-last-box h2{
+  font-size: 30px;
 }
 .invest-spotlight-last-text h2{
   color: rgba(35, 97, 146, 1);
@@ -1014,10 +1082,11 @@ justify-content: center;
 }
 
 .invest-spotlight-last-img{
-  margin-left: 20px;
+  margin: 0 20px 0 20px;
+
 }
 .invest-spotlight-last-img img{
-  width: 80%;
+  width: 100%;
 }
 
 .invest-contact{
@@ -1664,6 +1733,9 @@ justify-content: center;
 /* Media Quries */
 /* Extra large devices (large laptops and desktops, upto 1200px ) */
 @media only screen and (max-width: 1200px ) {
+  .hero-main {
+    height: 160vh;
+}
 /* Nav Start */
 .nav-links li {
   margin: 0px 2% 0px 2% ;
@@ -1733,6 +1805,11 @@ justify-content: center;
   position: relative;
   left: 6%;
 }
+/* ---------------------------------------------Investment Page----------------------------------------------------------------- */
+
+.invest-spotlight-lower-text {
+  padding: 50px 25% 50px 27%;
+}
 
 
   }
@@ -1771,6 +1848,9 @@ justify-content: center;
       background-color: white;
       color: rgba(34, 94, 141, 1);
     }
+    .hero-main {
+      height: 120vh;
+  }
 
 
     /* ----------------------------------------------MID SECTION PART 1----------------------------------------------------- */
@@ -2276,8 +2356,11 @@ justify-content: center;
 .invest-spotlight-lower-text {
   padding: 50px 20% 50px 20%;
 }
+.investment-section {
+  padding: 0 3%;
+}
 .different-text {
-  width: 90%;
+  width: 70%;
   padding: 5% 10px 5% 10px;
 }
 .different-text-bold {
@@ -2299,13 +2382,68 @@ justify-content: center;
 }
 .invest-certeria-img {
   max-width: 100%;
+  position: relative;
+  left: 5%;
+}
+.section-different-text h1 {
+  font-size: var(--heading-2-768px);
+}
+.section-investment-text h1 {
+  font-size: var(--heading-2-768px);
+}
+.veranda-main-heading {
+  text-align: center;
+  font-size: var(--heading-2-768px);
+  color: var(--main-font-color);
+  font-family: Bellota Text;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+/* -------------------------------------------------------------------------------------------------------- */
+.invest-spotlight-inner {
+  flex-direction: column;
+}
+.invest-spotlight-text {
+  max-width: 100%;
+  padding: 0% 0px 0px 0%;
+}
+.invest-spotlight-text-border {
+  position: static;
+  left: 0%;
+  top: 0%;
+  margin: 5% 8% 5% 8%;
+}
+.invest-spotlight-text-border p {
+  padding: 6% 5% 6% 5%;
+  font-size: 22px;
+}
+.invest-spotlight-img {
+  max-width: 100%;
+}
+.invest-spotlight-lower-text {
+  padding: 50px 15% 50px 20%;
 }
 
-
+.invest-contact-inner p {
+  font-size: 18px;
+  width: 50%;
+}
+.contact-button {
+  height: 40px;
+  width: 32%;
+  font-size: 18px;
+}
   } 
   
   /* Medium devices (landscape tablets, 768px and up) */
   @media only screen and (max-width: 768px) {
+
+  .hero-main {
+      height: 100vh;
+  }
+  .hero-inner-text {
+    top: 130px;
+}
 
   .mid-section-part-2 img {
       width: 85%;
@@ -2368,7 +2506,7 @@ justify-content: center;
 /* --------------------------------------------------------------------------------------------------------- */
 
 .mid-section-main-other{
-  padding: 5% 7% 0% 7%;
+  padding: 5% 3% 0% 3%;
 }
 
 
@@ -2688,8 +2826,55 @@ justify-content: center;
   max-width: 100%;
 }
 .invest-spotlight-lower-text {
-  padding: 50px 10% 50px 10%;
+  padding: 50px 12% 50px 16%;
 }
+.different-text {
+  width: 90%;
+  padding: 5% 10px 5% 10px;
+}
+
+
+
+.invest-spotlight-last{
+  background: rgba(240, 240, 240, 1);
+  display: flex;
+  width: 80%;
+  height: 30vh;
+  border-radius: 100px 100px 100px 0px;
+  padding: 20px 0px 15px 40px;
+  margin: 20px auto 50px auto;
+}
+
+
+.invest-spotlight-last-box h1{
+  width: 50%;
+  height: 0px;
+  margin-top: 3%;
+  margin-right: 6px;
+  border-top: 3px solid rgba(35, 97, 146, 1);
+}
+.invest-spotlight-last-box h2{
+  font-size: 26px;
+}
+.invest-spotlight-last-text h2{
+  color: rgba(35, 97, 146, 1);
+  text-transform: uppercase;
+  text-align: right;
+}
+.invest-spotlight-last-text p{
+  color: rgba(112, 120, 118, 1);
+  text-align: right;
+  font-size: 18px;
+}
+
+.invest-spotlight-last-img{
+  margin: 20px 20px 0 20px;
+
+}
+.invest-spotlight-last-img img{
+  width: 100%;
+}
+
 
 } 
   
@@ -2732,8 +2917,8 @@ justify-content: center;
       margin: 3% 0% 3% 0;
      }
     .mid-section-part-1-mobile-heading {
-      font-size: 28px;
-      line-height: 28px;
+      font-size: 32px;
+      line-height: 32px;
       display: flex;
     }
     .mid-section-part-1 p {
@@ -3232,6 +3417,10 @@ justify-content: center;
   text-align: center;
   font-size: 18px;
 }
+.section-different-text h1 {
+  font-size: 40px;
+}
+
 
 .invest-spotlight-last-text h2 {
   text-align: center;
@@ -3250,15 +3439,103 @@ justify-content: center;
 .different-section-lower {
   height: 580px;
 }
+.section-different-text p {
+  margin: 3% auto;
+  line-height: 24px;
+  font-size: 18px;
+}
+.different-text p {
+  font-size: 17px;
+}
+.different-text-bold {
+  font-size: 21px;
+}
+.section-investment-text h1 {
+  font-size: 36px;
+}
+.invest-certeria-text p {
+  font-size: 18px;
+}
+.invest-certeria-text h2 {
+  font-size: 30px;
+}
 .spotlight-lower-text-inner h2 {
   font-size: 32px;
 }
 .spotlight-lower-text-inner p {
   font-size: 16px;
+  line-height: 20px;
 }
 .invest-spotlight-lower-text {
   padding: 50px 10% 50px 14%;
 }
+.veranda-main-heading {
+  font-size: var(--heading-2-600px);
+}
+.invest-spotlight-text-border p {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
+.invest-spotlight-last{
+
+  flex-direction: column-reverse;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 10px 10px 10px;
+  padding: 15px 0px 15px 0px;
+  margin: 20px auto 50px auto;
+}
+
+
+.invest-spotlight-last-box h1{
+  width: 50%;
+  height: 0px;
+  margin-top: 3%;
+  margin-right: 0px;
+  border-top: 3px solid rgba(35, 97, 146, 1);
+}
+.invest-spotlight-last-box h2{
+  font-size: 26px;
+}
+.invest-spotlight-last-text h2{
+  color: rgba(35, 97, 146, 1);
+  text-transform: uppercase;
+  text-align: right;
+}
+.invest-spotlight-last-text p{
+  text-align: center;
+  font-size: 18px;
+  margin: 10px;
+}
+
+.invest-spotlight-last-img{
+  margin: 0px auto 0 auto;
+}
+.invest-spotlight-last-img img{
+  width: 100%;
+  margin: 10px auto;
+}
+.invest-spotlight-last-box {
+
+  justify-content: unset;
+  flex-direction: column-reverse;
+}
+.invest-spotlight-last-box h1 {
+  width: 90%;
+  height: 0px;
+  margin: 0 auto;
+  border-top: 3px solid rgba(35, 97, 146, 1);
+}
+
+
+
+
+
+
+
+
 }
 
 
@@ -3498,6 +3775,33 @@ margin: 20px 8px 8px 8px;
 .different-section-lower {
   height: 640px;
 }
+
+.section-different-text p {
+  font-size: 16px;
+}
+.different-text p {
+  font-size: 16px;
+  margin: 30px 0;
+}
+.different-text-bold {
+  font-size: 20px;
+}
+.section-investment-text h1 {
+  font-size: 36px;
+  line-height: 36px;
+  margin: 8% auto;
+}
+.invest-text {
+  margin: 18% auto 8% auto;
+}
+.invest-spotlight-text-border p {
+  font-size: 18px;
+  line-height: 24px;
+}
+.invest-certeria-text {
+  max-width: 100%;
+  padding: 10% 20px 0px 20px;
+}
   }
 
 
@@ -3640,6 +3944,8 @@ margin: 20px 8px 8px 8px;
 .different-section-lower {
   height: 720px;
 }
+
+
 
 
 
