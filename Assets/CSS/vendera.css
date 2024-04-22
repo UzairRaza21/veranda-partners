@@ -646,6 +646,25 @@ footer{
  
 }
 
+.footer-nav-links{
+  display: flex;
+justify-content: center;
+}
+.footer-nav-links li {
+  list-style: none;
+  text-transform: capitalize;
+  margin: 0px 2.5% 0px 2.5% ;
+  
+
+}
+.footer-nav-links li a{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+  font-size: 19px;
+  letter-spacing: 1.5px;
+  display: inline-block;
+}
+
 .footer-inner{
   display: flex;
   flex-direction: column;
@@ -792,11 +811,67 @@ footer{
 #hero-invest-bg-img{
   background-image: url(../Images/Investment/invest-hero-bg.png);
 }
+
+.mid-section-main-other{
+  padding: 5% 10% 3% 10%;
+}
+
+.mid-section-other{
+  font-family: Bellota Text;
+  display: flex;
+  justify-content: space-between;
+}
+.mid-section-part-1-other{
+  max-width: 50%;
+  margin: 8% 0% 8% 0%;
+}
+.mid-section-part-1-other h1{
+  font-size: var(--heading-3);
+  text-transform: uppercase;
+  color: var(--main-font-color);
+  line-height: 45px;
+  width: 80%;
+}
+.mid-section-part-1-other p{
+  font-size: var(--para-font-size);
+  color: var(--para-font-color);
+  line-height: 28px;
+  width: 80%;
+}
+
+.divider-other{
+  border-top: 6px solid rgba(163, 173, 170, 1);
+  margin: 2% -10% 2% 10%;
+}
+
+.mid-section-part-2-other{
+  max-width: 50%;
+}
+.mid-section-part-2-other img{
+  width: 95%;
+  height: 95%;
+  position: relative;
+  left: 10%;
+}
+
+.mid-section-part-1-mobile-heading-other{
+  font-size: 30px;
+  line-height: 34px;
+  padding: 20px 5px 20px 5px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--main-font-color);
+  display: none;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------ */
 .different-section{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-family: Bellota Text;
+  text-align: center;
 }
 .different-section-lower{
   background: linear-gradient(180deg, #F1F1F1 0%, #E1E7EC 100%);
@@ -1629,11 +1704,35 @@ footer{
   width: 100%;
 }
 
+.nav-link-big-width{
+  width: 140px;
+}
+/* ------------------------------------------------------------------------------------------------------------------------ */
+.mid-section-main-other{
+  padding: 5% 5% 3% 5%;
+}
 
 
+.mid-section-part-1-other h1{
+  font-size: var(--heading-3);
+  text-transform: uppercase;
+  color: var(--main-font-color);
+  line-height: 45px;
+  width: 80%;
+}
+.mid-section-part-1-other p{
+  font-size: var(--para-font-size);
+  color: var(--para-font-color);
+  line-height: 28px;
+  width: 80%;
+}
 
-
-
+.mid-section-part-2-other img{
+  width: 95%;
+  height: 95%;
+  position: relative;
+  left: 6%;
+}
 
 
   }
@@ -1710,6 +1809,33 @@ footer{
   width: 90%;
   height: 90%;
   left: 5vw;
+}
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+
+.mid-section-main-other{
+  padding: 5% 5% 3% 5%;
+}
+
+
+.mid-section-part-1-other h1{
+  font-size: 35px;
+  text-transform: uppercase;
+  color: var(--main-font-color);
+  line-height: 40px;
+  width: 90%;
+}
+.mid-section-part-1-other p{
+  font-size: 18px;
+  color: var(--para-font-color);
+  line-height: 24px;
+  width: 90%;
+}
+
+.mid-section-part-2-other img{
+  width: 95%;
+  height: 95%;
+  position: relative;
+  left: 6%;
 }
 
 
@@ -1923,6 +2049,10 @@ footer{
     font-size: 20px;
     font-weight: 500;
   
+  }
+
+  .nav-link-big-width{
+    width: 140px;
   }
 
   /* ------------------------------------------------------------------Contact page------------------------------------------------ */
@@ -2235,7 +2365,33 @@ footer{
   margin: 20px 8px 8px 8px;
   font-family: Almarai;
 }
+/* --------------------------------------------------------------------------------------------------------- */
 
+.mid-section-main-other{
+  padding: 5% 7% 0% 7%;
+}
+
+
+.mid-section-part-1-other h1{
+  font-size: 30px;
+  text-transform: uppercase;
+  color: var(--main-font-color);
+  line-height: 40px;
+  width: 90%;
+}
+.mid-section-part-1-other p{
+  font-size: 16px;
+  color: var(--para-font-color);
+  line-height: 24px;
+  width: 90%;
+}
+
+.mid-section-part-2-other img{
+  width: 90%;
+  height: 90%;
+  position: relative;
+  left: 8%;
+}
 /* ---------------------------------------------------------------------------------------------------------------- */
 
   .giving-text{
@@ -2393,6 +2549,7 @@ footer{
 #footer-nav-links{
   flex-direction: column;
   text-align: center;
+  justify-content: center;
 }
 
 .footer-logo{
@@ -2566,6 +2723,10 @@ footer{
       flex-direction: column-reverse;
       margin: 3% 0% 3% 0;
     }
+    .mid-section-other{
+      flex-direction: column-reverse;
+      margin: 3% 0% 3% 0;
+    }
     .mid-section-right{
       flex-direction: column-reverse;
       margin: 3% 0% 3% 0;
@@ -2576,6 +2737,12 @@ footer{
       display: flex;
     }
     .mid-section-part-1 p {
+      font-size: 15px;
+      line-height: 20px;
+      margin: 1% auto 2% auto;
+      width: 95%; 
+    }
+    .mid-section-part-1-other p {
       font-size: 15px;
       line-height: 20px;
       margin: 1% auto 2% auto;
@@ -2593,6 +2760,11 @@ footer{
       padding: 0px 0px 0px 0px;
       left: 3%;
     }
+    .mid-section-part-2-other img {
+      width: 95%;
+      padding: 0px 0px 0px 0px;
+      left: 3%;
+    }
     .mid-section-part-2-pic-2 img{
       width: 90%;
       padding: 0px 0px 0px 0px;
@@ -2601,11 +2773,22 @@ footer{
     .mid-section-part-1 h1 {
       display: none;
   }
+  .mid-section-part-1-other h1 {
+    display: none;
+}
     .mid-section-part-1{
       max-width: 100%;
       text-align: center;
     }
     .mid-section-part-2{
+      max-width: 100%;
+      padding: 0px 0px 0px 0px;
+    }
+    .mid-section-part-1-other{
+      max-width: 100%;
+      text-align: center;
+    }
+    .mid-section-part-2-other{
       max-width: 100%;
       padding: 0px 0px 0px 0px;
     }
