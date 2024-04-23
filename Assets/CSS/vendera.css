@@ -144,7 +144,7 @@ nav{
 
 .divider{
   border-top: 6px solid rgba(163, 173, 170, 1);
-  margin: 2% -10% 2% 10%;
+  margin: 2% -50% 2% 50%;
 }
 
 .mid-section-part-2{
@@ -199,6 +199,8 @@ nav{
 .mid-section-part-2-pic-2 img{
   width: 90%;
   height: 90%;
+  position: relative;
+  z-index: 9999;
 }
 .mid-section-part-2-pic-2-mobile{
   display: none;
@@ -206,7 +208,7 @@ nav{
 }
 .divider-pic-2{
   border-top: 6px solid rgba(163, 173, 170, 1);
-  margin: 2% 10% 2% -10%;
+  margin: 2% 50% 2% -50%;
 }
 .web-button{
   height: 32px;
@@ -625,7 +627,7 @@ justify-content: center;
 
 .divider-other{
   border-top: 6px solid rgba(163, 173, 170, 1);
-  margin: 2% -10% 2% 10%;
+  margin: 2% -50% 2% 50%;
 }
 
 .mid-section-part-2-other{
