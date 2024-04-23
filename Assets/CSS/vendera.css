@@ -103,7 +103,7 @@ nav{
   font-size: var(--heading-1);
   line-height: 100px;
   text-transform: uppercase;
-  width: 75%;
+  width: 65%;
   margin: 0 auto;
 }
 .hero-inner-text h6{
@@ -444,9 +444,6 @@ nav{
   padding: 60px 0px 0px 0px;
 }
 
-
-
-
 .item{
   width: 90% !important;
   margin: 10px auto !important;
@@ -457,7 +454,6 @@ nav{
 .slider-width{
   max-width: 90% !important;
   margin: 3% auto;
-  /* background-color: violet; */
 }
 .homepage-cart-text{
   width: 70%;
@@ -514,22 +510,14 @@ nav{
 
 }
 .wrapper {
-	max-width: 75%;
+	max-width: 70%;
 	width: 100%;
 	position: relative;
 }
 .wrapper i {
-	top: 50%;
-	height: 50px;
-	width: 50px;
+	top: 55%;
 	cursor: pointer;
-	font-size: 1.25rem;
 	position: absolute;
-	text-align: center;
-	line-height: 50px;
-	background: #fff;
-	border-radius: 50%;
-	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
 	transform: translateY(-50%);
 	transition: transform 0.1s linear;
 }
@@ -545,7 +533,7 @@ nav{
 .wrapper .carousel {
 	display: grid;
 	grid-auto-flow: column;
-	grid-auto-columns: calc((95% / 3) - 0px);
+	grid-auto-columns: calc((100% / 3) - 10px);
 	overflow-x: auto;
 	scroll-snap-type: x mandatory;
 	gap: 30px;
@@ -553,6 +541,10 @@ nav{
 	scroll-behavior: smooth;
 	scrollbar-width: none;
 }
+/* .carousel{
+  transform: scale(1.2);
+} */
+
 .carousel::-webkit-scrollbar {
 	display: none;
 }
@@ -574,27 +566,10 @@ nav{
 }
 .carousel .card {
 	scroll-snap-align: start;
-	/* height: auto; */
 	list-style: none;
-	background: #fff;
 	cursor: pointer;
-	padding-bottom: 15px;
 	flex-direction: column;
-	border-radius: 8px;
-	box-shadow: 2px 2px 5px gray;
-	margin: 10px;
-}
-
-.card .img img {
-	  width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid #fff;
-}
-
-.card:active{
-	transform: scale(1.85);
+  padding-bottom: 3%;
 }
 
 
@@ -609,21 +584,24 @@ nav{
 		grid-auto-columns: 100%;
 	}
 }
-.card:active{
-	height: 600px;
-}
-
-
 
   /* Custom Changes Made */
-  /* .testimonial-img{
-    width: 100%;
-    margin: 0 auto;
-  } */
+
+  .card{
+    margin: 60px 20px 0 20px !important;
+  }
+  .card-inner{
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgb(243, 242, 242);
+    height: 50vh;
+  }
+ 
 
   .testimonial-img img{
-    width: 65%;
-    margin-left: 20%;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: -15%;
   }
   .testimonial-text{
     text-align: center;
@@ -633,8 +611,8 @@ nav{
   }
   .testimonial-text h4{
     font-family: Bellota Text;
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 23px;
+    font-weight: 500;
     line-height: 23.9px;
     color: rgba(35, 97, 146, 1);
     text-transform: uppercase;
@@ -645,11 +623,12 @@ nav{
     font-weight: 700;
     line-height: 13px;
     color: rgba(35, 97, 146, 1);
+    margin-top: 8px;
   }
   .testimonial-text p{
+    font-family: Bellota Text;
     color: rgba(112, 120, 118, 1);
     margin-top: 12px;
-
   }
 
 
@@ -711,102 +690,6 @@ justify-content: center;
   width: 100%;
   height: 25px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -891,6 +774,8 @@ justify-content: center;
 }
 .section-different-text{
   margin: 5% auto;
+  font-family: Bellota Text;
+  text-align: center;
 }
 .section-different-text h1 {
   color: var(--main-font-color);
@@ -1251,7 +1136,7 @@ justify-content: center;
   color: rgba(35, 97, 146, 1);
   font-size: 60px;
   line-height: 60px;
-  font-weight: 400;
+  font-weight: 300;
   text-transform: uppercase;
 
 }
@@ -1294,7 +1179,7 @@ justify-content: center;
 }
 .board-join-us-text button{
   margin-top: 5%;
-  width: 30%;
+  width: 22%;
   height:45px;
   background-color: white;
   border-radius: 50px;
@@ -1317,11 +1202,83 @@ justify-content: center;
   background-image: url(../Images/social/social-pic\ \(1\).png);
 }
 
+
+/* ----------------------------------------------MID SECTION PART 1 and 3----------------------------------------------------- */
+.mid-section-scoial-h1{
+  margin-top: 15%;
+}
+.mid-section-3-social-h1{
+  margin-top: -15%;
+}
+
+/* ----------------------------------------------MID SECTION PART 2----------------------------------------------------- */
+.mid-section-2-social-h1{
+  width: 90% !important;
+  margin: 0px 0px 0px 60px;
+}
+
 .mid-section-part-1-span{
   font-size: 33px;
   line-height: 33px;
   margin-bottom: 8%;
 }
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+.social-here-help{
+  width: 42%;
+}
+.social-here-help p{
+  font-weight: 600;
+}
+.social-here-help h1{
+  line-height: 95px;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------- */
+
+.slider-here-help-main{
+  background: rgba(225, 231, 236, 1);
+  font-family: Bellota Text;
+  width: 100%;
+  margin: 3% auto;
+  height: auto;
+}
+.slider-here-help-part-1{
+  max-width: 50%;
+  padding: 5% 3% 5% 8%;
+  box-sizing: border-box;
+}
+.slider-here-help-part-2{
+  max-width: 50%;
+}
+.slider-here-help-part-1-border{
+  border: 3px solid white;
+  padding: 10% 8% 10% 8%;
+}
+.slider-here-help-part-1-text h1{
+  font-size: 45px;
+  color: var(--main-font-color);
+  width: 60%;
+}
+.slider-here-help-part-1-text p{
+  font-size: var(--para-font-size);
+  color: var(--para-font-color);
+  font-weight: 900;
+}
+.social-button{
+  margin-left: 0px;
+  height: 42px;
+  font-size: 15px;
+  font-weight: 300;
+  border: 2px solid var(--main-font-color);
+}
+
+
+
+
+
+
+/* --------------------------------------------------------------------------------------------------------------------------- */
 .social-contact{
   background: rgba(225, 231, 236, 1);
   font-family: Bellota Text;
@@ -1453,7 +1410,7 @@ justify-content: center;
 }
 .leadership-cart h2 {
   color: rgba(35, 97, 146, 1);
-  font-size: 30px;
+  font-size: 29px;
   margin-top: 4%;
 }
 .leadership-cart h3 {
@@ -1810,7 +1767,15 @@ justify-content: center;
 .invest-spotlight-lower-text {
   padding: 50px 25% 50px 27%;
 }
+/* ----------------------------------------------Team Page----------------------------------------------------------------------- */
 
+.team-values{
+  width: 85%;
+}
+
+.insights-page-cart {
+  padding: 0px 2% 8% 3%;
+}
 
   }
   
@@ -2266,6 +2231,10 @@ justify-content: center;
 .leadership-cart{
   margin-top: 5%;
 }
+.team-values{
+  width: 95%;
+}
+
 /* -----------------------------------------------------------Social Impact Page-------------------------------------------- */
 .social-page-button {
   width: 17%;
@@ -2322,7 +2291,7 @@ justify-content: center;
   line-height: 38px;
 }
 .board-ms-icon img {
-  width: 2.5%;
+  width: 4vw;
 }
 .board-mid-section-right-inner a {
   font-size: 19px;
@@ -2805,6 +2774,52 @@ justify-content: center;
   width: 80%;
   margin: 3% auto;
 }
+
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+.social-here-help{
+  width: 60%;
+}
+.social-here-help p{
+  font-weight: 600;
+
+}
+.social-here-help h1{
+  line-height: 75px;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------- */
+
+.slider-here-help-main{
+  margin: 3% auto;
+  height: auto;
+}
+.slider-here-help-part-1{
+  max-width: 100%;
+  padding: 8% 8% 8% 8%;
+}
+.slider-here-help-part-2{
+  max-width: 100%;
+}
+.slider-here-help-part-1-border{
+  border: 3px solid white;
+  padding: 10% 8% 10% 8%;
+}
+.slider-here-help-part-1-text h1{
+  font-size: 36px;
+  width: 100%;
+}
+.slider-here-help-part-1-text p{
+  font-size: 18px;
+  line-height: 24px;
+}
+.social-button{
+  height: 42px;
+  font-size: 15px;
+  width: 30%;
+  margin-left: 0px;
+}
+
 /* --------------------------------------------------------Investment page--------------------------------------------------- */
 .invest-spotlight-inner {
   flex-direction: column;
@@ -3334,6 +3349,51 @@ justify-content: center;
 .social-mcdonald-inner {
   flex-direction: column;
 }
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+.social-here-help{
+  width: 70%;
+}
+.social-here-help p{
+  font-weight: 600;
+
+}
+.social-here-help h1{
+  line-height: 45px;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------- */
+
+.slider-here-help-main{
+  margin: 12% auto;
+  height: auto;
+}
+.slider-here-help-part-1{
+  padding: 5% 5% 5% 5%;
+}
+.slider-here-help-part-2{
+  max-width: 100%;
+}
+.slider-here-help-part-1-border{
+  border: 3px solid white;
+  padding: 10% 8% 10% 8%;
+  text-align: center;
+}
+.slider-here-help-part-1-text h1{
+  font-size: 30px;
+  width: 100%;
+}
+.slider-here-help-part-1-text p{
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 10px;
+}
+.social-button{
+  height: 42px;
+  font-size: 15px;
+  width: 50%;
+  margin-left: 0px;
+}
 /* ----------------------------------------------------Board Page---------------------------------------------------------- */
 .board-join-us-text h1 {
   font-size: 40px;
@@ -3559,6 +3619,8 @@ justify-content: center;
       font-size: 28px;
       line-height: 28px;
       padding: 20px 0px 20px 0px;
+      margin: 0 auto;
+
   }
   .mid-section{
     flex-direction: column-reverse;
@@ -3744,6 +3806,10 @@ margin: 20px 8px 8px 8px;
   font-size: 35px;
   line-height: 35px;
 }
+
+.insight-cart-text h4 {
+  font-size: 26px;
+}
 /* ------------------------------------------------------------------------------------------------------------------------------- */
 
 .testimonial-section h1 {
@@ -3801,6 +3867,11 @@ margin: 20px 8px 8px 8px;
 .invest-certeria-text {
   max-width: 100%;
   padding: 10% 20px 0px 20px;
+}
+.social-page-button {
+  width: 45%;
+  font-size: 14px;
+  height: 35px;
 }
   }
 
