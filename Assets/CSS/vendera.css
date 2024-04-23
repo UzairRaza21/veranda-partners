@@ -501,135 +501,20 @@ nav{
   padding: 60px 0px 80px 0px;
 }
 
-/* Testimonial Slider Code Start */
-
 .testimonial-slider{
 	display: flex;
 	align-items: center;
 	justify-content: center;
 
 }
-.wrapper {
-	max-width: 70%;
-	width: 100%;
-	position: relative;
-}
-.wrapper i {
-	top: 55%;
-	cursor: pointer;
-	position: absolute;
-	transform: translateY(-50%);
-	transition: transform 0.1s linear;
-}
-.wrapper i:active {
-	transform: translateY(-50%) scale(0.85);
-}
-.wrapper i:first-child {
-	left: -65px;
-}
-.wrapper i:last-child {
-	right: -65px;
-}
-.wrapper .carousel {
-	display: grid;
-	grid-auto-flow: column;
-	grid-auto-columns: calc((100% / 3) - 10px);
-	overflow-x: auto;
-	scroll-snap-type: x mandatory;
-	gap: 30px;
-	border-radius: 8px;
-	scroll-behavior: smooth;
-	scrollbar-width: none;
-}
-/* .carousel{
-  transform: scale(1.2);
-} */
 
-.carousel::-webkit-scrollbar {
-	display: none;
-}
-.carousel.no-transition {
-	scroll-behavior: auto;
-}
-.carousel.dragging {
-	scroll-snap-type: none;
-	scroll-behavior: auto;
-}
-.carousel.dragging .card {
-	cursor: grab;
-	user-select: none;
-}
-.carousel :where(.card, .img) {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.carousel .card {
-	scroll-snap-align: start;
-	list-style: none;
-	cursor: pointer;
-	flex-direction: column;
-  padding-bottom: 3%;
-}
+/* Testimonial Slider Code */
 
 
-@media screen and (max-width: 900px) {
-	.wrapper .carousel {
-		grid-auto-columns: calc((100% / 2) - 9px);
-	}
-}
 
-@media screen and (max-width: 600px) {
-	.wrapper .carousel {
-		grid-auto-columns: 100%;
-	}
-}
+  
 
-  /* Custom Changes Made */
 
-  .card{
-    margin: 60px 20px 0 20px !important;
-  }
-  .card-inner{
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 2px 2px 10px rgb(243, 242, 242);
-    height: 50vh;
-  }
- 
-
-  .testimonial-img img{
-    width: 50%;
-    margin-left: 25%;
-    margin-top: -15%;
-  }
-  .testimonial-text{
-    text-align: center;
-    width: 80% ;
-    margin: auto;
-    border-radius: 10px;
-  }
-  .testimonial-text h4{
-    font-family: Bellota Text;
-    font-size: 23px;
-    font-weight: 500;
-    line-height: 23.9px;
-    color: rgba(35, 97, 146, 1);
-    text-transform: uppercase;
-  }
-  .testimonial-text h5{
-    font-family: Bellota Text;
-    font-size: 13px;
-    font-weight: 700;
-    line-height: 13px;
-    color: rgba(35, 97, 146, 1);
-    margin-top: 8px;
-  }
-  .testimonial-text p{
-    font-family: Bellota Text;
-    color: rgba(112, 120, 118, 1);
-    margin-top: 12px;
-  }
 
 
 

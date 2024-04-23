@@ -1,0 +1,90 @@
+
+    .wrapper.testimonial-main-wrapper{
+      max-width: 80%;
+    }
+    /* Default slide */
+  .testimonial-main-wrapper  .center-slider .slick-slide{
+      height: 480px;
+      margin: 0 35px 0 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform: scale(0.8);
+      transition: all 0.4s ease-in-out;
+    }
+    .testimonial-main-wrapper  .center-slider .slick-slide,
+    .testimonial-main-wrapper .center-slider .slick-slide[aria-hidden="true"]:not(.slick-cloned) ~ .slick-cloned[aria-hidden="true"] {
+      transform: scale(0.8, 0.8);
+      transition: all 0.4s ease-in-out;
+    }
+    
+    /* Active center slide (You can change anything here for cenetr slide)*/
+    .testimonial-main-wrapper .center-slider .slick-center,
+    .testimonial-main-wrapper .center-slider .slick-slide[aria-hidden="true"]:not([tabindex="-1"]) + .slick-cloned[aria-hidden="true"] {
+      transform: scale(1.1);
+    
+    }
+    .testimonial-main-wrapper  .center-slider .slick-current.slick-active{
+      transform: scale(1.1);
+   
+    }
+    
+    .testimonial-main-wrapper  .slick-next, .testimonial-main-wrapper .slick-prev{
+      z-index: 5;
+    }
+    .testimonial-main-wrapper  .slick-next{
+      right: 45px;
+    }
+    .testimonial-main-wrapper  .slick-prev{
+      left: 15px;
+    }
+    .testimonial-main-wrapper  .slick-next:before, .testimonial-main-wrapper .slick-prev:before{
+      color: #000;
+      font-size: 26px;
+    }
+  
+  
+    /* Custom Changes Made */
+  
+  
+    .testimonial-main-wrapper  .card-inner{
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 2px 2px 10px rgb(243, 242, 242);
+    }
+   
+  
+    .testimonial-main-wrapper  .testimonial-img img{
+      width: 50%;
+      margin-left: 25%;
+      margin-top: -15%;
+    }
+    .testimonial-main-wrapper  .testimonial-text{
+      text-align: center;
+      width: 80% ;
+      margin: auto;
+      border-radius: 10px;
+    }
+    .testimonial-main-wrapper  .testimonial-text h4{
+      font-family: Bellota Text;
+      font-size: 23px;
+      font-weight: 500;
+      line-height: 23.9px;
+      color: rgba(35, 97, 146, 1);
+      text-transform: uppercase;
+    }
+    .testimonial-main-wrapper  .testimonial-text h5{
+      font-family: Bellota Text;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 13px;
+      color: rgba(35, 97, 146, 1);
+      margin-top: 8px;
+    }
+    .testimonial-main-wrapper  .testimonial-text p{
+      font-family: Bellota Text;
+      color: rgba(112, 120, 118, 1);
+      margin-top: 12px;
+      padding-bottom: 60px;
+    }
+  
