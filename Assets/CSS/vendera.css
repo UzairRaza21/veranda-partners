@@ -453,6 +453,14 @@ nav{
   box-shadow: 3px 3px 8px rgb(152, 151, 151);
   background-color: white;
 } */
+
+.insight-slider-item{
+  width: 90% !important;
+  margin: 10px auto !important;
+  border-radius: 10px;
+  box-shadow: 3px 3px 8px rgb(152, 151, 151);
+  background-color: white;
+}
 .slider-width{
   max-width: 90% !important;
   margin: 3% auto;
