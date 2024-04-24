@@ -445,14 +445,14 @@ nav{
   text-align: center;
   padding: 60px 0px 0px 0px;
 }
-
+/* 
 .item{
   width: 90% !important;
   margin: 10px auto !important;
   border-radius: 10px;
   box-shadow: 3px 3px 8px rgb(152, 151, 151);
   background-color: white;
-}
+} */
 .slider-width{
   max-width: 90% !important;
   margin: 3% auto;
@@ -511,6 +511,99 @@ nav{
 }
 
 /* Testimonial Slider Code */
+
+
+.wrapper.testimonial-main-wrapper{
+  max-width: 80%;
+}
+/* Default slide */
+.testimonial-main-wrapper  .center-slider .slick-slide{
+  height: 560px;
+  margin: 0 35px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0.8);
+  transition: all 0.4s ease-in-out;
+}
+.testimonial-main-wrapper  .center-slider .slick-slide,
+.testimonial-main-wrapper .center-slider .slick-slide[aria-hidden="true"]:not(.slick-cloned) ~ .slick-cloned[aria-hidden="true"] {
+  transform: scale(0.8, 0.8);
+  transition: all 0.4s ease-in-out;
+}
+
+/* Active center slide (You can change anything here for cenetr slide)*/
+.testimonial-main-wrapper .center-slider .slick-center,
+.testimonial-main-wrapper .center-slider .slick-slide[aria-hidden="true"]:not([tabindex="-1"]) + .slick-cloned[aria-hidden="true"] {
+  transform: scale(1.1);
+
+}
+.testimonial-main-wrapper  .center-slider .slick-current.slick-active{
+  transform: scale(1.1);
+
+}
+
+.testimonial-main-wrapper  .slick-next, .testimonial-main-wrapper .slick-prev{
+  z-index: 5;
+}
+.testimonial-main-wrapper  .slick-next{
+  right: 45px;
+}
+.testimonial-main-wrapper  .slick-prev{
+  left: 15px;
+}
+.testimonial-main-wrapper  .slick-next:before, .testimonial-main-wrapper .slick-prev:before{
+  color: #000;
+  font-size: 26px;
+}
+
+
+/* Custom Changes Made */
+
+
+.testimonial-main-wrapper  .card-inner{
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgb(243, 242, 242);
+}
+
+
+.testimonial-main-wrapper  .testimonial-img img{
+  width: 50%;
+  margin-left: 25%;
+  margin-top: -15%;
+}
+.testimonial-main-wrapper  .testimonial-text{
+  text-align: center;
+  width: 80% ;
+  margin: auto;
+  border-radius: 10px;
+}
+.testimonial-main-wrapper  .testimonial-text h4{
+  font-family: Bellota Text;
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 23.9px;
+  color: rgba(35, 97, 146, 1);
+  text-transform: uppercase;
+}
+.testimonial-main-wrapper  .testimonial-text h5{
+  font-family: Bellota Text;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 13px;
+  color: rgba(35, 97, 146, 1);
+  margin-top: 8px;
+}
+.testimonial-main-wrapper  .testimonial-text p{
+  font-family: Bellota Text;
+  color: rgba(112, 120, 118, 1);
+  margin-top: 12px;
+  padding-bottom: 60px;
+}
+
+
+
 
 
 
@@ -1090,6 +1183,7 @@ justify-content: center;
 }
 
 
+
 /* ----------------------------------------------MID SECTION PART 1 and 3----------------------------------------------------- */
 .mid-section-scoial-h1{
   margin-top: 15%;
@@ -1121,22 +1215,25 @@ justify-content: center;
   line-height: 95px;
 }
 
-/* --------------------------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------Here Help Slider Code------------------------------------------------------------ */
 
 .slider-here-help-main{
   background: rgba(225, 231, 236, 1);
   font-family: Bellota Text;
   width: 100%;
-  margin: 3% auto;
+  margin: 0% auto 22% auto;
   height: auto;
+  display: flex;
 }
 .slider-here-help-part-1{
   max-width: 50%;
   padding: 5% 3% 5% 8%;
   box-sizing: border-box;
+
 }
 .slider-here-help-part-2{
   max-width: 50%;
+ 
 }
 .slider-here-help-part-1-border{
   border: 3px solid white;
@@ -1988,6 +2085,19 @@ justify-content: center;
     width: 140px;
   }
 
+  .wrapper.testimonial-main-wrapper{
+    max-width: 100%;
+  }
+  .testimonial-main-wrapper  .slick-next{
+    right: 15px;
+  }
+  .testimonial-main-wrapper  .slick-prev{
+    left: 15px;
+  }
+
+  .testimonial-main-wrapper  .center-slider .slick-slide{
+    margin: 0 0px 0 0;
+  }
   /* ------------------------------------------------------------------Contact page------------------------------------------------ */
   
 .contact-content{
@@ -2681,9 +2791,11 @@ justify-content: center;
 /* --------------------------------------------------------------------------------------------------------------------------- */
 
 .slider-here-help-main{
-  margin: 3% auto;
+  margin: 0% auto 50% auto;
   height: auto;
+  flex-direction: column;
 }
+
 .slider-here-help-part-1{
   max-width: 100%;
   padding: 8% 8% 8% 8%;
@@ -3255,9 +3367,10 @@ justify-content: center;
 /* --------------------------------------------------------------------------------------------------------------------------- */
 
 .slider-here-help-main{
-  margin: 12% auto;
+  margin: 0% auto 40% auto;
   height: auto;
 }
+
 .slider-here-help-part-1{
   padding: 5% 5% 5% 5%;
 }

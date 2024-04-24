@@ -7,28 +7,7 @@ function openMenu(){
  }
  
 
-// Swiper Slider
 
-var swiper = new Swiper('.swiper-container.swiper-testimonial', {
-  slidesPerView: 3,
-  spaceBetween: 30,
-  breakpoints: {  
-      '@480': {
-        slidesPerView: 2,
-        spaceBetween: 30,},
-      '@991': {
-        slidesPerView: 2,
-        spaceBetween: 30, },
-    },
-  pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-  },
-  navigation: {
-      nextEl: '.swiper-button-next-test',
-      prevEl: '.swiper-button-prev-test',
-  },
-});
 
 // Owl Slider
 
@@ -65,6 +44,19 @@ $(document).ready(function(){
     centerPadding: '20px',
     infinite: true,
     autoplaySpeed: 5000,
-    autoplay:false
+    autoplay:false,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          fade: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: false,
+          centerPadding: "0px"
+        }
+      }
+
+    ]
   });
 });
