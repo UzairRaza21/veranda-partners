@@ -37,29 +37,35 @@ nav{
   background: linear-gradient(180deg, #225E8D 0%, #28689A 100%);
   font-family: "Asap", sans-serif;
   color: rgba(255, 255, 255, 1);
-  display: flex;
-  align-items: center;
-  padding: 1.5% 0px 1.5% 6% ;
+  padding: 10px 0 10px 0px;
 
 }
-
+.nav-inner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width:  100%;
+}
+.logo-pic{
+  flex: 0 0 15%;
+  max-width: 15%;
+}
 .logo-pic img{
-  width: 100%;
+  width: 26%;
+}
+.desktop-nav{
+  max-width: 40%;
+  flex: 0 0 40%;
 }
 .nav-links{
   display: flex;
 
 }
-#nav-links{
-  margin-left: 13vw  ;
 
-}
 .nav-links li {
   list-style: none;
   text-transform: capitalize;
   margin: 0px 2.5% 0px 2.5% ;
-  
-
 }
 .nav-links li a{
   text-decoration: none;
@@ -85,19 +91,23 @@ nav{
   display: none;
 }
 
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
+
 .hero-main{
   background-image: url('../Images/Home/hero-section-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 150vh;
-  
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
 }
 .hero-inner-text{
   font-family: Bellota Text;
   text-align: center;
   color: whitesmoke;
-  position: relative;
-  top: 165px;
+
 }
 .hero-inner-text h1{
   font-size: var(--heading-1);
@@ -911,6 +921,7 @@ justify-content: center;
 .invest-spotlight-img{
   max-width: 50%;
   background: rgba(226, 232, 237, 1);
+  flex: 0 0 49%;
 }
 .invest-spotlight-img img{
   width: 100%;
@@ -1035,6 +1046,7 @@ justify-content: center;
 }
 .board-mid-section-right-img-part-2{
   max-width: 50%;
+  flex: 0 0 50%;
 }
 .board-mid-section-right-img-part-2 img{
   width: 100%;
@@ -1104,6 +1116,7 @@ justify-content: center;
 }
 .board-mid-section-left-img-part-1{
   max-width: 50%;
+  flex: 0 0 50%;
 }
 .board-mid-section-left-img-part-1 img{
   width: 100%;
@@ -1331,20 +1344,26 @@ justify-content: center;
 .social-mcdonald{
   width: 50%;
   margin: 3% auto;
-  transform: scale(1.2);
+  /* transform: scale(1.2); */
 }
 .social-mcdonald-inner{
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
+}
+.social-mcdonald-inner-img{
+  flex: 0 0 50%;
 }
 .social-mcdonald-inner-img img{
   width: 80%;
-  margin-left: 30%;
+  /* margin-left: 30%; */
+  /* flex: 0 0 50%; */
 }
 .social-mcdonald-inner-form{
-  padding: 5% 3% 3% 3%;
+  /* padding: 5% 3% 3% 3%; */
   text-align: center;
+  flex: 0 0 50%;
+  transform: scale(1.6);
 }
 .social-form-input{
   width: 300px;
@@ -1436,7 +1455,8 @@ justify-content: center;
   margin-top: 50px;
 }
 .team-values-text{
-  max-width: 70%;
+  max-width: 50%;
+  flex: 0 0 50%;
 }
 .team-values-text p{
   line-height: 30px;
@@ -1445,10 +1465,11 @@ justify-content: center;
   font-size: 22px;
 }
 .team-values-img{
-  max-width: 30%;
+  max-width: 50%;
+  flex: 0 0 50%;
 }
 .team-values-img img{
-  width: 90%;
+  width: 75%;
 }
 
 
@@ -1485,6 +1506,9 @@ justify-content: center;
   margin-top: -100px;
   font-family: Bellota Text;
   padding: 0px 8% 8% 8%;
+  justify-content: center;
+  align-items: center;
+
 }
 
 
@@ -1494,6 +1518,7 @@ justify-content: center;
 .insight-cart-inner{
   box-shadow: 3px 3px 8px rgb(152, 151, 151);
   border-radius: 10px;
+  /* flex: 0 0 15%; */
 }
 .insight-cart-text{
   width: 280px;
@@ -1681,10 +1706,49 @@ justify-content: center;
 
 
 /* Media Quries */
+
+@media only screen and (max-width: 1440px){
+  .nav-inner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width:  100%;
+  }
+  .logo-pic{
+    flex: 0 0 15%;
+    max-width: 15%;
+  }
+  .logo-pic img{
+    width: 50%;
+  }
+  .desktop-nav{
+    max-width: 60%;
+    flex: 0 0 60%;
+  }
+  .nav-links{
+    display: flex;
+  }
+  
+
+
+  .social-mcdonald-inner-form{
+    /* padding: 5% 3% 3% 3%; */
+    flex: 0 0 50%;
+    transform: scale(1.2);
+  }
+}
+
 /* Extra large devices (large laptops and desktops, upto 1200px ) */
 @media only screen and (max-width: 1200px ) {
+  .social-mcdonald-inner-form{
+    /* padding: 5% 3% 3% 3%; */
+    flex: 0 0 50%;
+    transform: scale(1.0);
+  }
+
+
   .hero-main {
-    height: 160vh;
+    height: 100vh;
 }
 /* Nav Start */
 .nav-links li {
@@ -1781,9 +1845,27 @@ justify-content: center;
     .desktop-nav{
       display: none;
     }
-    nav{
+    .nav-inner{
+      display: flex;
+      align-items: center;
       justify-content: space-between;
+      max-width:  100%;
     }
+    .logo-pic{
+      flex: 0 0 15%;
+      max-width: 15%;
+    }
+    .logo-pic img{
+      width: 50%;
+      margin-left: 15%;
+    }
+    .desktop-nav{
+      max-width: 60%;
+      flex: 0 0 60%;
+    }
+
+    
+
     .mobile-nav{
       display: block;
       position: absolute;
@@ -1807,7 +1889,7 @@ justify-content: center;
       color: rgba(34, 94, 141, 1);
     }
     .hero-main {
-      height: 120vh;
+      height: 100vh;
   }
 
 
@@ -2189,9 +2271,6 @@ justify-content: center;
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
-  margin-top: -100px;
-  font-family: Bellota Text;
-  padding: 0px 0% 8% 24%;
 }
 
 
@@ -2249,7 +2328,7 @@ justify-content: center;
   width: 90%;
 }
 .social-mcdonald-inner-img img {
-  width: 128%;
+  width: 100%;
   margin-left: -35%;
 }
 
@@ -2416,9 +2495,6 @@ justify-content: center;
   .hero-main {
       height: 100vh;
   }
-  .hero-inner-text {
-    top: 130px;
-}
 
   .mid-section-part-2 img {
       width: 85%;
@@ -2773,8 +2849,8 @@ justify-content: center;
   font-size: 19px;
 }
 .social-mcdonald-inner-img img {
-  width: 100%;
-  margin-left: 0%;
+  width: 80%;
+  margin-left: 10%;
 }
 
 .social-mcdonald{
@@ -2905,12 +2981,28 @@ justify-content: center;
   
   /* Extra small devices (phones, 600px and down) */
   @media only screen and (max-width: 600px) {
-    .hero-inner-text {
-      position: relative;
-      top: 120px;
-  }
+
+    .nav-inner{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width:  100%;
+    }
+    .logo-pic{
+      flex: 0 0 15%;
+      max-width: 15%;
+    }
+    .logo-pic img{
+      width: 100%;
+      margin-left: 15%;
+    }
+    .desktop-nav{
+      max-width: 60%;
+      flex: 0 0 60%;
+    }
+
     .hero-main {
-      background-image: url(../Images/Home/hero-section-mobile-bg.png);
+      background-image: url(../Images/Home/hero-section-bg.png);
       background-size: cover;
       height: 100vh;
   }

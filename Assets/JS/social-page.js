@@ -1,3 +1,12 @@
+// Nav Bar
+
+let mobileNav = document.getElementById("mobile-nav-links");
+
+function openMenu(){
+    mobileNav.classList.toggle("mobile-nav-links");
+ }
+ 
+
 
 // Social Page Slider- Slick Slider
 
