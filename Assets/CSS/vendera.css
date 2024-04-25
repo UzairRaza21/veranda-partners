@@ -37,46 +37,34 @@ nav{
   background: linear-gradient(180deg, #225E8D 0%, #28689A 100%);
   font-family: "Asap", sans-serif;
   color: rgba(255, 255, 255, 1);
-  padding: 10px 0 10px 0px;
-
+  padding: 20px 0 20px 0px;
 }
 .nav-inner{
   display: flex;
   align-items: center;
-  justify-content: center;
-  max-width:  100%;
+  justify-content: space-around;
+  /* justify-content: space-evenly; */
+  width:  100%;
 }
-.logo-pic{
-  flex: 0 0 15%;
-  max-width: 15%;
-}
-.logo-pic img{
-  width: 26%;
-}
-.desktop-nav{
-  max-width: 40%;
-  flex: 0 0 40%;
-}
-.nav-links{
-  display: flex;
 
+.logo-pic img{
+  width: 100%;
 }
+
 
 .nav-links li {
+  display: inline-block;
+  margin: 0 12px 0 12px;
   list-style: none;
   text-transform: capitalize;
-  margin: 0px 2.5% 0px 2.5% ;
 }
 .nav-links li a{
   text-decoration: none;
   color: rgba(255, 255, 255, 1);
   font-size: 19px;
   letter-spacing: 1.5px;
-  display: inline-block;
 }
-.nav-link-big-width {
-  width: 135px;
-}
+
 .hamburger{
   display: none;
   font-size: 25px;
@@ -1708,7 +1696,7 @@ justify-content: center;
 /* Media Quries */
 
 @media only screen and (max-width: 1440px){
-  .nav-inner{
+  /* .nav-inner{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1727,7 +1715,7 @@ justify-content: center;
   }
   .nav-links{
     display: flex;
-  }
+  } */
   
 
 
@@ -1757,9 +1745,7 @@ justify-content: center;
 .nav-links li a{
   font-size: 15px;
 }
-.nav-link-big-width {
-  width: 120px;
-}
+
 
 .section-3-left-inner h1{
   font-size: 35px;
@@ -1790,9 +1776,7 @@ justify-content: center;
   width: 100%;
 }
 
-.nav-link-big-width{
-  width: 140px;
-}
+
 /* ------------------------------------------------------------------------------------------------------------------------ */
 .mid-section-main-other{
   padding: 5% 5% 3% 5%;
@@ -1851,18 +1835,11 @@ justify-content: center;
       justify-content: space-between;
       max-width:  100%;
     }
-    .logo-pic{
-      flex: 0 0 15%;
-      max-width: 15%;
-    }
+
     .logo-pic img{
-      width: 50%;
       margin-left: 15%;
     }
-    .desktop-nav{
-      max-width: 60%;
-      flex: 0 0 60%;
-    }
+ 
 
     
 
@@ -2171,9 +2148,7 @@ justify-content: center;
   
   }
 
-  .nav-link-big-width{
-    width: 140px;
-  }
+
 
   .wrapper.testimonial-main-wrapper{
     max-width: 100%;
