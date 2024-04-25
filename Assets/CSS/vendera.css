@@ -279,12 +279,15 @@ nav{
   max-width: 50%;
   background: linear-gradient(180deg, #F1F1F1 0%, #E2E8ED 100%);
   height: 100vh;
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .section-3-right{
   max-width: 50%;
-  height: 100vh;
-  background: linear-gradient(180deg, #F0F0F1 0%, #E3E9EE 100%);
+  flex-basis: 50%;
 }
 .section-3-right img{
   width: 100%;
@@ -296,24 +299,18 @@ nav{
   position: relative;
   z-index: 9999;
   left: 12vw;
-  top: 20vh;
-  height: 60vh;
-  width: 100%;
 }
 .section-3-left-bg-2{
   border: 4px solid rgba(255, 255, 255, 1);
   position: relative;
   z-index: 9999;
   right: 10vw;
-  top: 16vh;
-  height: 62vh;
-  width: 100%;
 }
 .section-3-left-inner {
-  padding: 8% 35% 0% 10%;
+  padding: 8% 35% 8% 10%;
 }
 .section-3-left-inner-2{
-  padding: 6% 10% 0% 30%;
+  padding: 8% 10% 8% 30%;
 }
 .section-3-left-inner h1{
   color: var(--main-font-color);
@@ -1992,11 +1989,13 @@ justify-content: center;
 .section-3-left{
   max-width: 100%;
   height: auto;
+  flex-basis: 100%;
 }
 
 .section-3-right{
   max-width: 100%;
   height: auto;
+  flex-basis: 100%;
 }
 .section-3-right img{
   width: 100%;
@@ -2621,11 +2620,11 @@ justify-content: center;
 
 .section-3-right{
   max-width: 100%;
-  padding: 0px 10px 0px 10px;
+  /* padding: 0px 10px 0px 10px; */
 }
-.section-3-right img{
+/* .section-3-right img{
   width: 100%;
-}
+} */
 
 .section-3-left-inner-2 {
   width: auto;
@@ -3166,14 +3165,14 @@ justify-content: center;
 .section-3-para-bold{
   margin-top: 10px;
 }
-.section-3-right{
+/* .section-3-right{
   max-width: 100%;
-  height: 70vh;
+
 }
 .section-3-right img{
   width: 100%;
-  height: 70vh;
-}
+
+} */
 
 
 /* ----------------------------------------------------------------------------------------------------------------------------- */
@@ -3809,14 +3808,14 @@ margin: 20px 8px 8px 8px;
 .section-3-para-bold{
   margin-top: 10px;
 }
-.section-3-right{
+/* .section-3-right{
   max-width: 100%;
-  height: 50vh;
+
 }
 .section-3-right img{
   width: 100%;
-  height: 50vh;
-}
+ 
+} */
 
 /* --------------------------------------------------------------------------------------------------------------------------- */
 .faq-section{
