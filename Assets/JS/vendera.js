@@ -6,6 +6,17 @@ function openMenu(){
     mobileNav.classList.toggle("mobile-nav-links");
  }
  
+//  Sticky NavBar
+let stickyNav = document.getElementById("sticky-nav");
+
+function scrolldown(){
+  if(window.scrollY >= 100 ){
+   stickyNav.classList.add("sticky");
+  }
+  else{
+   stickyNav.classList.remove("sticky");
+  }
+}
 
 
 
