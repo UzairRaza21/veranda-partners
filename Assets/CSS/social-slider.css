@@ -139,12 +139,13 @@
     background-color: white;
     height: 710px !important;
     border-radius: 10px;
-    box-shadow: 2px 2px 5px rgb(131, 130, 130);
+    box-shadow: 2px 2px 15px rgb(131, 130, 130);
     font-family: Bellota Text;
     display: block;
   }
   .social-slider-here-help-main .social-slider-inner{
     background-color: white;
+    border-radius: 10px;
   }
   .social-slider-here-help-main .social-slider-text{
     padding: 40px;
