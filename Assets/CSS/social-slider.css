@@ -4,7 +4,7 @@
   .social-slider-here-help-main .wrap {
     position: relative;
     z-index: 100;
-    width: 78%;
+    width: 90%;
     height: 100%;
     /* padding: 0 60px; */
     -webkit-background-size: cover;
@@ -30,7 +30,7 @@
     padding: 0 0px;
     margin: 5rem auto;
     max-width: 800px;
-    width: 100%;
+    width: 75%;
   
   }
   
@@ -51,7 +51,7 @@
   }
   
   .social-slider-here-help-main .slick-prev {
-    left: 0px;
+    left: -20px;
     text-align: center;
     color: var(--main-font-color);
     font-size: 35px;
@@ -63,7 +63,7 @@
   }
   
   .social-slider-here-help-main .slick-next {
-    right: -55px;
+    right: -60px;
     text-align: center;
     color: var(--main-font-color);
     font-size: 35px;
@@ -123,7 +123,9 @@
     /* margin: 0 -10% ; */
     transform: scale(1);
     z-index: 30;
-    margin-left: 10%; 
+    margin-left: 5%; 
+
+
   }
   
   .social-slider-here-help-main .slick-center:after {
