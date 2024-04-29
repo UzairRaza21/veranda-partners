@@ -12,7 +12,7 @@ function openMenu(){
 let stickyNav = document.getElementById("sticky-nav");
 
 function scrolldown(){
-  if(window.scrollY >= 1 ){
+  if(window.scrollY >= 0.1 ){
    stickyNav.classList.add("sticky");
   //  mobileLinks.classList.add("sticky-links");
   }
