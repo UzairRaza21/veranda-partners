@@ -51,7 +51,7 @@
   }
   
   .social-slider-here-help-main .slick-prev {
-    left: -20px;
+    left: 10px;
     text-align: center;
     color: var(--main-font-color);
     font-size: 35px;
@@ -179,14 +179,40 @@
    .social-slider-here-help-main{
     margin-bottom: -50%;
    }
+   @media only screen and (max-width: 1440px){
+    
+  .social-slider-here-help-main .slick-prev {
+    left: -20px;
+    text-align: center;
+    color: var(--main-font-color);
+    font-size: 35px;
+    background-color: white;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    box-shadow: 2px 2px  white;
+  }
+  
+  .social-slider-here-help-main .slick-next {
+    right: -60px;
+    text-align: center;
+    color: var(--main-font-color);
+    font-size: 35px;
+    background-color: white;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    box-shadow: 2px 2px  white;
+  }
 
+   }
    @media only screen and  (max-width: 1024px){
     .social-slider-here-help-main .slick-prev {
-        left: -50px;
+        left: -55px;
       }
       
       .social-slider-here-help-main .slick-next {
-        right: -50px;
+        right: -55px;
       }
       .social-slider-here-help-main .item{
         height: 690px !important;
@@ -201,30 +227,42 @@
 
    @media only screen and  (max-width: 768px){
     .social-slider-here-help-main .slick-prev {
-        left: 50px;
+        left: 20px;
       }
       
       .social-slider-here-help-main .slick-next {
-        right: -50px;
+        right: -60px;
       }
    }
 
    
    @media only screen and  (max-width: 600px){
     .social-slider-here-help-main .slick-prev {
-        left: -55px;
+        left: 10px;
         width: 48px;
         height: 48px;
       }
       
       .social-slider-here-help-main .slick-next {
-        right: -55px;
+        right: 10px;
         width: 48px;
         height: 48px;
       }
       .social-slider-here-help-main .wrap {
-        width: 70%;
+        width: 90%;
       }
+      .social-slider-here-help-main .slider {
+ 
+        width: 100%;
+      
+      }
+      .social-slider-here-help-main .wrap {
+        width: 100%;
+      }
+      .social-slider-here-help-main .item.slick-slide {
+        width: 250px;
+      }
+      
       .social-slider-here-help-main .social-slider-text{
         padding: 40px;
 
@@ -251,10 +289,5 @@
    }
     
    @media only screen and  (max-width: 600px){
-    .social-slider-here-help-main .wrap {
-        width: 62%;
-      }
-      .social-slider-here-help-main .item.slick-slide {
-        width: 250px;
-      }
+
    }
