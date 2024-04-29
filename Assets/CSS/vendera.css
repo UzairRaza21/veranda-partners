@@ -44,6 +44,12 @@ nav{
   width: 100%;
   z-index: 99999999;
 }
+.sticky-links{
+  position: sticky;
+  width: 100%;
+  z-index: 99999999;
+  display: block;
+}
 .nav-inner{
   display: flex;
   align-items: center;
@@ -1899,9 +1905,10 @@ footer{
 
     .mobile-nav{
       display: block;
-      position: absolute;
+      position: fixed;
       width: 100%;
       z-index: 9999;
+      top: 98px;
     }
     #link{
       display: block;

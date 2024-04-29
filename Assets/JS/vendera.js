@@ -1,20 +1,24 @@
 // Nav Bar
 
 let mobileNav = document.getElementById("mobile-nav-links");
+// let mobileLinks = document.getElementById("veranda-mobile-nav");
 
 function openMenu(){
     mobileNav.classList.toggle("mobile-nav-links");
+    
  }
  
 //  Sticky NavBar
 let stickyNav = document.getElementById("sticky-nav");
 
 function scrolldown(){
-  if(window.scrollY >= 100 ){
+  if(window.scrollY >= 1 ){
    stickyNav.classList.add("sticky");
+  //  mobileLinks.classList.add("sticky-links");
   }
   else{
    stickyNav.classList.remove("sticky");
+  //  mobileLinks.classList.remove("sticky-links");
   }
 }
 
