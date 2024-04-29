@@ -878,7 +878,7 @@ footer{
 
 .invest-spotlight-lower-text{
   text-align: left;
-  padding: 50px 30% 50px 30%;
+  padding: 50px 38% 50px 38%;
 }
 .spotlight-lower-text-inner{
   margin: 40px 0px 0px 0px;
@@ -942,8 +942,8 @@ footer{
 .invest-spotlight-last{
   background: rgba(240, 240, 240, 1);
   display: flex;
-  width: 60%;
-  height: 30vh;
+  width: 32%;
+  height: 15vh;
   border-radius: 100px 100px 100px 0px;
   padding: 20px 0px 15px 40px;
   margin: 20px auto 50px auto;
@@ -1719,27 +1719,58 @@ footer{
 /* Media Quries */
 
 @media only screen and (max-width: 1440px){
-  /* .nav-inner{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width:  100%;
+  .invest-spotlight-lower-text{
+    text-align: left;
+    padding: 50px 30% 50px 30%;
   }
-  .logo-pic{
-    flex: 0 0 15%;
-    max-width: 15%;
-  }
-  .logo-pic img{
-    width: 50%;
-  }
-  .desktop-nav{
-    max-width: 60%;
-    flex: 0 0 60%;
-  }
-  .nav-links{
-    display: flex;
-  } */
   
+  
+
+.invest-spotlight-last{
+  background: rgba(240, 240, 240, 1);
+  display: flex;
+  width: 60%;
+  height: 30vh;
+  border-radius: 100px 100px 100px 0px;
+  padding: 20px 0px 15px 40px;
+  margin: 20px auto 50px auto;
+}
+.invest-spotlight-last-text{
+  margin: auto;
+}
+.invest-spotlight-last-box{
+  display: flex;
+  justify-content: end;
+}
+.invest-spotlight-last-box h1{
+  width: 50%;
+  height: 0px;
+  margin-top: 3%;
+  margin-right: 6px;
+  border-top: 3px solid rgba(35, 97, 146, 1);
+}
+.invest-spotlight-last-box h2{
+  font-size: 30px;
+}
+.invest-spotlight-last-text h2{
+  color: rgba(35, 97, 146, 1);
+  text-transform: uppercase;
+  text-align: right;
+}
+.invest-spotlight-last-text p{
+  color: rgba(112, 120, 118, 1);
+  text-align: right;
+  font-size: 20px;
+}
+
+.invest-spotlight-last-img{
+  margin: 0 20px 0 20px;
+
+}
+.invest-spotlight-last-img img{
+  width: 100%;
+}
+
 
 
   .social-mcdonald-inner-form{
